@@ -1,4 +1,4 @@
-<div class="modal fade" id="modalres"> 
+<div class="modal fade" id="modalres">
     <div class="modal-dialog">
         <div class="modal-content">
             <div id="rootwizard">
@@ -40,6 +40,8 @@
                             </div>
                             <!-- //fim row  -->
                         </div>
+
+
                         <div class="tab-pane" id="tab2">
                             <div class="row" style="margin-top: 20px">
 
@@ -104,32 +106,8 @@
                                         <option value="">-- Escolha um estado --</option>
                                     </select>
 
-                                    <script src="http://www.google.com/jsapi"></script>
-                                    <script type="text/javascript">
-                                      google.load('jquery', '1.3');
-                                    </script>       
-
-                                    <script type="text/javascript">
-                                    $(function(){
-                                        $('#cod_estados').change(function(){
-                                            if( $(this).val() ) {
-                                                $('#cod_cidades').hide();
-                                                $('.carregando').show();
-                                                $.getJSON('cidades.ajax.php?search=',{cod_estados: $(this).val(), ajax: 'true'}, function(j){
-                                                    console.log(j);
-                                                    var options = '<option value=""></option>'; 
-                                                    for (var i = 0; i < j.length; i++) {
-                                                        options += '<option value="' + j[i].cod_cidades + '">' + j[i].nome + '</option>';
-                                                    }   
-                                                    $('#cod_cidades').html(options).show();
-                                                    $('.carregando').hide();
-                                                });
-                                            } else {
-                                                $('#cod_cidades').html('<option value="">– Escolha um estado –</option>');
-                                            }
-                                        });
-                                    });
-                                    </script>
+                                
+                                   
 
                                 </div>
                                 

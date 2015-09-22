@@ -5,12 +5,19 @@
 <meta name="viewport" content="width=device-width, maximum-scale=1">
 <title>Server House | Provedor de Internet</title>
 <link rel="icon" href="favicon.png" type="image/png">
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+
+<!-- Latest compiled and minified CSS & JS -->
+<link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="//code.jquery.com/jquery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified CSS & JS -->
+
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
 <link href="css/animate.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
  
 <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
@@ -445,79 +452,17 @@
 </footer>
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
 <script type="text/javascript" src="js/jquery.nav.js"></script> 
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.isotope.js"></script>
 <script type="text/javascript" src="js/wow.js"></script> 
 <script type="text/javascript" src="js/custom.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-<script>  
-
-    $( document ).on('click', '.next', function() {
-        
-        var valeur = 0;
-        
-            if ( $(this).attr('value') > valeur )
-            {
-                valeur =  $(this).attr('value');
-            }
-        
-        $('.progress-bar').css('width', valeur+'100%').attr('aria-valuenow', valeur);
-        $('.enviar').removeClass('hidden');
-        $('.next').addClass('hidden');
-
-    });
-
-    $( document ).on('click', '.previous', function() {
-        
-        var valeur = 0;
-        
-            if ( $(this).attr('value') > valeur )
-            {
-                valeur =  $(this).attr('value');
-            }
-        
-        $('.progress-bar').css('width', valeur+'50%').attr('aria-valuenow', valeur);
-        $('.enviar').addClass('hidden');
-        $('.next').removeClass('hidden');
-    });
-
-    $( document ).on('click', '#home', function() {
-        
-        var valeur = 0;
-        
-            if ( $(this).attr('value') > valeur )
-            {
-                valeur =  $(this).attr('value');
-            }
-        $('.progress-bar').css('width', valeur+'50%').attr('aria-valuenow', valeur);
-        $('.enviar').addClass('hidden');
-        $('.next').removeClass('hidden');
-        $('#tab1').modal();
-    });
-
-    $( document ).on('click', '#tab', function() {
-        
-        var valeur = 0;
-        
-            if ( $(this).attr('value') > valeur )
-            {
-                valeur =  $(this).attr('value');
-            }
-        $('.progress-bar').css('width', valeur+'50%').attr('aria-valuenow', valeur);
-        $('.enviar').addClass('hidden');
-        $('.next').removeClass('hidden');
-        $('#tab12').modal();
-
-    });
-
-</script>           
+<script type="text/javascript" src="js/organizar.js"></script>      
 
 <?php
-    include 'modal1.php'; 
+    // include 'modal1.php'; 
     include 'modal2.php';
 ?>
 

@@ -9,6 +9,82 @@ Do not remove the back-link in this web template
 @import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
 @import url(http://fonts.googleapis.com/css?family=Signika:400,600);
 
+.container { 
+    padding-top: 40px; 
+}
+#details { 
+    font-family: "Quicksand", sans-serif; 
+    font-size: 30px; 
+}
+
+#home-box{
+    width: 20%;
+    transition: all .5s ease-in-out; 
+
+   
+
+}
+.box-shadow{
+     transition: all .5s ease-in-out; 
+}
+.box-shadow:hover {
+    box-shadow: 0 0 30px -5px #000;
+}
+#home-box:hover { transform: scale(1.1); }
+
+.actions{
+    transform: scale(1.1);
+}
+.actions .box-shadow{
+    box-shadow: 0 0 30px -5px #000;
+}
+
+
+#home-box > h2 { 
+    font-family: "Quicksand", sans-serif; 
+    font-weight: 100; 
+    line-height: 1.1; 
+    color: #75b1ae; 
+
+}
+.price { 
+    font-size: 15px; 
+    float: left; 
+}
+.pricing_header { 
+    background: none repeat scroll 0% 0% #5A6571; 
+    border-radius: 5px 5px 0px 0px; 
+    transition: background 0.4s ease-out 0s; 
+    padding: 10px;
+}
+.pricing_header h2 { 
+    text-align:center; 
+    line-height: 25px; 
+    padding: 15px 0px; 
+    margin: 0px; 
+    font-family: "Quicksand", sans-serif; 
+    font-size: 15px;
+    color: #FFFFFF; 
+}
+.list-group-item:first-child { 
+    border-top-right-radius: 0px; 
+    border-top-left-radius: 0px; 
+}
+.btn { 
+    float: right; 
+    font-family: "Quicksand", sans-serif; 
+    font-weight:500;
+}
+.off { 
+    text-decoration: 
+    line-through; 
+    color: rgb(86,86,86); 
+}
+.space {
+    height: 2px; 
+    background-color: #75b1ae;
+}
+
 /* Reset
 ---------------------------------*/
 ul {
@@ -22,6 +98,8 @@ ul {
 img {
     max-width: 100%;
 }
+
+
 
 a, a:hover, a:active {
     outline: 0px !important;
@@ -58,6 +136,8 @@ body {
     font-weight: normal;
     color: #888888;
     margin: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 h2 {
@@ -78,6 +158,10 @@ h3 {
     margin: 0 0 5px 0;
 }
 
+.coloration{
+    color: #fff;
+}
+
 h6 {
     font-size: 16px;
     color: #888888;
@@ -96,31 +180,36 @@ p {
 ---------------------------------*/
 
 #header_wrapper {
-    background: #ffffff;
-    padding: 20px 0px;
+   background: #ffffff;
+   padding: 0 0 0px 0px;
 }
 
 .header_box {
     position: relative;
+    background-color: #ffffff !important; 
 }
 
 .logo {
     float: left;
-    margin-top: 8px;
-	position: relative;
-	z-index: 2;
+    margin-top: -17px;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 16px;
 }
 
+.topCima{
+    width: 1270px;
+}
 .res-nav_click {
     display: none;
 }
-	
+
 
 /* Nav Styles
 ---------------------------------*/
 .navbar-inverse {
-    background-color: transparent;
-    border-color: transparent;
+    background-color: transparent !important;
+    border-color: transparent !important;
 }
 
 .navbar {
@@ -148,7 +237,8 @@ p {
 }
 
 .navStyle ul li:first-child {
-	/*margin:0px;*/;
+	    color: #000;
+    background-color: #FFF;
 }
 
 .navStyle ul li:last-child {
@@ -169,29 +259,29 @@ p {
 }
 
 .navStyle ul li a:hover {
-    color: #33877d;
+    color: #FF9000;
 }
 
 .navStyle > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    color: #33877d;
+    color: #FF9000;
     background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #33877d;
-    background-color: transparent;
+    color: #FF9000 !important;
+    background-color: transparent !important;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #33877d;
-    background-color: transparent;
+    color: #FF9000 !important;
+    background-color: transparent !important;
 }
 
-.navStyle > li.active > a,
-.navStyle > li.active > a:hover {
+.navbar-nav > li.active > a,
+.navbar-nav > li.active > a:hover {
     text-decoration: none;
-    color: #33877d;
+    color: #FF9000;
     background-color: transparent;
 }
 
@@ -211,8 +301,10 @@ p {
 ---------------------------------*/
 
 .top_cont_outer {
-    background: #33877d;
+    background-image: url('../img/bg_top.jpg');
+    background-color: #DADADA;
     position: relative;
+    height: 
 }
 
 .hero_section {
@@ -246,7 +338,7 @@ p {
 
 .top_left_cont h2 {
     font-size: 40px;
-    color: #FFF;
+    color: black;
     line-height: 52px;
     margin: 0 0 26px 0;
     font-family: 'Raleway', sans-serif;
@@ -279,14 +371,14 @@ a.read_more2 {
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     background: transparent;
-    color: #fff;
-    border: 1px solid #fff;
+    color: #fa7b18;
+    border: 1px solid #fa7b18;
 }
 
 a.read_more2:hover {
-    background: #fff;
-    color: #33877d;
-    border: 1px solid #fff;
+    background: #fa7b18;
+    color: #fff;
+    border: 1px solid #fa7b18;
 }
 
 	
@@ -319,7 +411,7 @@ a.read_more2:hover {
 }
 
 .service_icon {
-    border: 2px solid #33877d;
+    border: 2px solid #FF9000;
     border-radius: 50%;
     width: 90px;
     height: 90px;
@@ -327,11 +419,11 @@ a.read_more2:hover {
 }
 
 .service_icon.icon2 {
-    border: 2px solid #33877d;
+    border: 2px solid #FF9000;
 }
 
 .service_icon.icon3 {
-    border: 2px solid #33877d;
+    border: 2px solid #FF9000;
 }
 
 .service_icon span {
@@ -343,7 +435,7 @@ a.read_more2:hover {
 }
 
 .service_icon i {
-    color: #33877d;
+    color: #FF9000;
     font-size: 40px;
     margin-top: 0;
     position: relative;
@@ -365,6 +457,18 @@ a.read_more2:hover {
     margin: 0px;
 }
 	
+
+.serviceCont{
+    height: 523px;
+}
+
+.recomendado{
+    width: 81px;
+    height: 82px;
+    position: absolute;
+    margin: -9px 0 0 -8px;
+    background: url(../img/recomendado_01.png);
+}
 
 
 /* Latest Work
@@ -436,18 +540,18 @@ a.contact_btn {
     text-align: center;
     line-height: 49px;
     font-size: 16px;
-    color: #33877d;
+    color: #FF9000;
     border-radius: 3px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    border: 2px solid #33877d;
+    border: 2px solid #FF9000;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
 }
 
 a.contact_btn:hover {
-    background: #33877d;
+    background: #FF9000;
     color: #fff;
 }
 
@@ -458,10 +562,14 @@ a.contact_btn:hover {
 
 /* Portfolio
 ---------------------------------*/
-
+.areaAtuacaoFoto{
+    text-align: right;
+}
 
 #Portfolio {
     padding: 60px 0px;
+    height: 523px;
+    margin-top: 26px;
 }
 
 .Portfolio-nav {
@@ -492,7 +600,7 @@ a.contact_btn:hover {
 }
 
 .Portfolio-nav li a:hover {
-    background: #33877d;
+    background: #FF9000;
     color: #fff;
     text-decoration: none;
 }
@@ -522,7 +630,7 @@ a.contact_btn:hover {
 }
 
 .Portfolio-nav li a.current {
-    background: #33877d;
+    background: #FF9000;
     color: #fff;
     text-decoration: none;
 }
@@ -557,7 +665,7 @@ img {
 
 
 #clients {
-    padding: 60px 0px;
+    padding: 112px 0px;
 }
 
 .client_area {
@@ -778,7 +886,7 @@ img {
 }
 
 .contact_section h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: #ffffff;
     margin: 0 0 50px 0;
     text-transform: uppercase;
@@ -955,7 +1063,7 @@ img {
     width: 175px;
     height: 50px;
     letter-spacing: 0px;
-    background: #33877d;
+    background: #FF9000;
     border-radius: 3px;
     color: #ffffff;
     font-size: 16px;
@@ -970,6 +1078,31 @@ img {
 .input-btn:hover {
     background: #fff;
     color: #222;
+}
+.botaoAreaCliente:hover {
+    background: #fff;
+    color: #222;
+}
+
+a.botaoAreaCliente:link{
+    text-decoration: none;
+}
+
+.botaoAreaCliente{   
+
+    
+    width: 175px;
+    height: 50px;
+    letter-spacing: 0px;
+    background: #FF9000;
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 0px;
+    padding: 10px;
+
 }
 
 /* Footer
@@ -1070,6 +1203,7 @@ img {
 
 #portfolio {
     padding: 60px 0 40px;
+    margin-top: 26px;
 }
 
 
@@ -1610,7 +1744,21 @@ div.mc-image {
     display: inherit;
     padding: 0;
 }
+.botaoAreaCliente{
 
+    width: 175px;
+    height: 50px;
+    letter-spacing: 0px;
+    background: #FF9000;
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 0px;
+    padding: 10px;
+
+}
 /*
    Media Queries
 --------------------------- */
@@ -1708,9 +1856,10 @@ margin: 0px;
 color: #222;
 background: #F9F9F9;
 }
-} 
+ 
 @media (max-width: 480px){ 
 .team_area {
 width: 99%;
 }
 }
+

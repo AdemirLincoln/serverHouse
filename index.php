@@ -462,7 +462,7 @@
 <script type="text/javascript" src="js/organizar.js"></script>      
 
 <?php
-    // include 'modal1.php'; 
+    include 'modal1.php'; 
     include 'modal2.php';
 ?>
 

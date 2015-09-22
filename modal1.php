@@ -40,6 +40,8 @@
                             </div>
                             <!-- //fim row  -->
                         </div>
+
+
                         <div class="tab-pane" id="tab22">
                             <div class="row" style="margin-top: 20px">
 
@@ -104,32 +106,8 @@
                                         <option value="">-- Escolha um estado --</option>
                                     </select>
 
-                                    <script src="http://www.google.com/jsapi"></script>
-                                    <script type="text/javascript">
-                                      google.load('jquery', '1.3');
-                                    </script>       
-
-                                    <script type="text/javascript">
-                                    $(function(){
-                                        $('#cod_estados').change(function(){
-                                            if( $(this).val() ) {
-                                                $('#cod_cidades').hide();
-                                                $('.carregando').show();
-                                                $.getJSON('cidades.ajax.php?search=',{cod_estados: $(this).val(), ajax: 'true'}, function(j){
-                                                    console.log(j);
-                                                    var options = '<option value=""></option>'; 
-                                                    for (var i = 0; i < j.length; i++) {
-                                                        options += '<option value="' + j[i].cod_cidades + '">' + j[i].nome + '</option>';
-                                                    }   
-                                                    $('#cod_cidades').html(options).show();
-                                                    $('.carregando').hide();
-                                                });
-                                            } else {
-                                                $('#cod_cidades').html('<option value="">– Escolha um estado –</option>');
-                                            }
-                                        });
-                                    });
-                                    </script>
+                                
+                                   
 
                                 </div>
                                 
@@ -144,15 +122,15 @@
                 <div class="modal-footer">
 
                     <div style="float:right">
-                        <input type='button' href="#tab22" data-toggle="tab" class='btn btn-primary next' name='next' value='Próximo' />
+                        <input type='button' href="#tab2" data-toggle="tab" class='btn btn-primary next' name='next' value='Próximo' />
                     </div>
 
                     <div style="float:left">
-                        <input type='button' href="#tab12" data-toggle="tab" class='btn btn-primary previous' name='previous' value='Voltar' />
+                        <input type='button' href="#tab1" data-toggle="tab" class='btn btn-primary previous' name='previous' value='Voltar' />
                     </div>
 
                     <div style="float:right">
-                        <input type='button' href="#tab22" data-toggle="tab" class='btn btn-primary enviar hidden' name='enviar' value='Enviar' />
+                        <input type='button' href="#tab2" data-toggle="tab" class='btn btn-primary enviar hidden' name='enviar' value='Enviar' />
                     </div>
 
                 </div>

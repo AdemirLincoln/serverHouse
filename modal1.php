@@ -122,15 +122,15 @@
                 <div class="modal-footer">
 
                     <div style="float:right">
-                        <input type='button' href="#tab2" data-toggle="tab" class='btn btn-primary next' name='next' value='Próximo' />
+                        <input type='button' href="#tab22" data-toggle="tab" class='btn btn-primary next' name='next' value='Próximo' />
                     </div>
 
                     <div style="float:left">
-                        <input type='button' href="#tab1" data-toggle="tab" class='btn btn-primary previous' name='previous' value='Voltar' />
+                        <input type='button' href="#tab12" data-toggle="tab" class='btn btn-primary previous' name='previous' value='Voltar' />
                     </div>
 
                     <div style="float:right">
-                        <input type='button' href="#tab2" data-toggle="tab" class='btn btn-primary enviar hidden' name='enviar' value='Enviar' />
+                        <input type='button' href="#tab22" data-toggle="tab" class='btn btn-primary enviar hidden' name='enviar' value='Enviar' />
                     </div>
 
                 </div>

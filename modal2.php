@@ -81,7 +81,7 @@
 
                                     ?>
                                     <label style="margin-left: 30px" for="cod_estados">Estado:</label>
-                                    <select name="cod_estados" id="cod_estados">
+                                    <select name="cod_estados" id="cod_estados1">
                                         <option value=""></option>
                                         <?php
                                             $sql = "SELECT cod_estados, sigla
@@ -102,7 +102,7 @@
 
                                     <label style="margin-left: 20px" for="cod_cidades">Cidade:</label>
                                     <!-- <span class="carregando">Aguarde, carregando...</span> -->
-                                    <select name="cod_cidades" id="cod_cidades">
+                                    <select name="cod_cidades" id="cod_cidades1">
                                         <option value="">-- Escolha um estado --</option>
                                     </select>
 

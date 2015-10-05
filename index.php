@@ -40,9 +40,10 @@
                 <div id="main-nav" class="collapse navbar-collapse navStyle">
                     <ul class="nav navbar-nav" id="mainNav">
                         <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
-                        <li><a href="#aboutUs" class="scroll-link">Sobre a Empresa</a></li>
-                        <li><a href="#service" class="scroll-link">Planos Wirelles</a></li>
+                        <li><a href="#service1" class="scroll-link">Planos Fibra Óptica</a></li>
+                        <li><a href="#service2" class="scroll-link">Planos Wirelles</a></li>
                         <li><a href="#portfolio" class="scroll-link">Áreas de Atuação</a></li>
+                        <li><a href="#aboutUs" class="scroll-link">Sobre a Empresa</a></li>                        
                         <li><a href="#contact" class="scroll-link">Contato</a></li>
                     </ul>
                 </div>
@@ -72,39 +73,259 @@
     </div>
 </section>
 <!--Hero_Section-->
-<!--Aboutus-->
-<section id="aboutUs">
-    <div class="inner_wrapper">
-        <div class="container">
-            <h2>Quem somos</h2>
-            <div class="inner_section">
-                <div class="row">
-                    <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right"><img src="img/anatel.jpg" height="280" width="1960" class="img-circle delay-03s animated wow zoomIn" alt=""></div>
-                    <div class=" col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left">
-                        <div class=" delay-01s animated fadeInDown wow animated">
-                            <h3>Para empresas que desejam ter acesso WIFI, nos podemos
-                            fazer o planejamento, a instalação e a divulgação WIFI ZONE para seus clientes... Consulte-nos....</h3><br/>
-                            <p>A Server House Informática, conta com planos acessíveis, a partir de R$ 62,00.
-                            Faça-nos uma visita para conhecer nosso Data Center e fazer um teste em nossa internet.
-                            Contamos com uma infra estrutura de qualidade e técnicos disponíveis 24h por dia.</p> <br/>
-                            <p>A Server House Informatica pode ajudar as empresas instaladas na área industrial da cidade,
-                            oferecendo internet e telefone, faça-nos uma visita e confira nossos planos... </p>
+
+<!--Service1-->
+<section  id="service1">
+    <div class="container serviceCont">
+        <h2>Planos Fibra Óptica</h2>
+        <div role="tabpanel">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#home1" aria-controls="home1" role="tab" data-toggle="tab">Planos Wirelles</a>
+                </li>
+                <li role="presentation">
+                    <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Planos Empresariais</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content" >
+                <div role="tabpanel" class="tab-pane active" id="home1" style="padding-top: 20px">
+
+                    <div class="col-md-3" id="home-box1">
+                        <div class="box-shadow">
+                            <div class="pricing_header">
+                                <h2>Residencial 1mb</h2>
+                                <div class="space"></div>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 1 Mega</li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 1 Mega</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
+                            </ul>
+
+                            <div class="try">
+                                <p class="price">R$ 59,90</p>
+                                <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
+                            </div>
                         </div>
-                        <div class="work_bottom"> <span>Quer saber mais..</span> <a href="#contact" class="contact_btn">Entre em contato</a> </div>
+                    </div>
+                    <!-- Pack 2-->
+                    <div class="col-md-3" id="home-box1">
+                        <div class="box-shadow">
+                            <div class="pricing_header">
+                                <h2>Residencial 2mb</h2>
+                                <div class="space"></div>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 2 Mega</li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 2 Mega</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
+                            </ul>
+
+                            <div class="try">
+                                <p class="price">R$ 69,90</p>
+                                <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Pack 3-->
+                    <div class="col-md-3 actions" id="home-box1">
+                        <div class="box-shadow">
+                            <div class="recomendado"></div>
+                            <div class="pricing_header">
+                                <h2>Residencial 4mb</h2>
+                                <div class="space"></div>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 4 Mega</li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 4 Mega</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
+                            </ul>
+
+                            <div class="try">
+                                <p class="price">R$ 99,90</p>
+                                <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pack 4-->
+                    <div class="col-md-3" id="home-box1">
+                        <div class="box-shadow">
+                            <div class="pricing_header">
+                                <h2>Residencial 5mb</h2>
+                                <div class="space"></div>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 5 Mega</li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 5 Mega</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
+                            </ul>
+
+                            <div class="try">
+                                <p class="price">R$ 149,90</p>
+                                <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pack 5-->
+                    <div class="col-md-3" id="home-box1">
+                        <div class="box-shadow">
+                            <div class="pricing_header">
+                                <h2>Residencial 10mb</h2>
+                                <div class="space"></div>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 10 Mega</li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 10 Mega</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
+                            </ul>
+
+                            <div class="try">
+                                <p class="price">R$ 189,90</p>
+                                <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
 
+                <div role="tabpanel" class="tab-pane" id="tab1" style="padding-top: 20px">
 
+
+                    <!-- Pack 1 -->
+                    <div class="col-md-3 " id="home-box1">
+                        <div class="box-shadow">
+                            <div class="pricing_header">
+                                <h2>Empresarial 5mb</h2>
+                                <div class="space"></div>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 5 Mega</li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 5 Mega</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
+                            </ul>
+
+                            <div class="try">
+                                <p class="price">R$ 99,90</p>
+                                <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pack 2-->
+                    <div class="col-md-3" id="home-box1">
+                        <div class="box-shadow">
+                            <div class="pricing_header">
+                                <h2>Empresarial 10mb</h2>
+                                <div class="space"></div>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 10 Mega</li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 10 Mega</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
+                            </ul>
+
+                            <div class="try">
+                                <p class="price">R$ 179,90</p>
+                                <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Pack 3-->
+                    <div class="col-md-3" id="home-box1">
+                        <div class="box-shadow">
+                            <div class="pricing_header">
+                                <h2>Empresarial 15mb</h2>
+                                <div class="space"></div>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 15 Mega</li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 15 Mega</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
+                            </ul>
+
+                            <div class="try">
+                                <p class="price">R$ 199,90</p>
+                                <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pack 4-->
+                    <div class="col-md-3" id="home-box1">
+                        <div class="box-shadow">
+                            <div class="pricing_header">
+                                <h2>Empresarial 20mb</h2>
+                                <div class="space"></div>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 20 Mega</li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 20 Mega</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
+                            </ul>
+
+                            <div class="try">
+                                <p class="price">R$ 219,90</p>
+                                <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pack 5-->
+                    <div class="col-md-3" id="home-box1">
+                        <div class="box-shadow">
+                            <div class="pricing_header">
+                                <h2>Empresarial 50mb</h2>
+                                <div class="space"></div>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 50 Mega</li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 50 Mega</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
+                            </ul>
+
+                            <div class="try">
+                                <p class="price">R$ 339,90</p>
+                                <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<!--Aboutus--> 
+<!--Service1-->
 
-
-<!--Service-->
-<section  id="service">
+<!--Service2-->
+<section  id="service2">
     <div class="container serviceCont">
         <h2>Planos Wirelles</h2>
         <div role="tabpanel">
@@ -247,7 +468,7 @@
                             <ul class="list-group">
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 5 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 5 Mega</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
                             </ul>
@@ -268,7 +489,7 @@
                             <ul class="list-group">
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 10 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 10 Mega</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
                             </ul>
@@ -291,7 +512,7 @@
                             <ul class="list-group">
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 15 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 15 Mega</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
                             </ul>
@@ -313,7 +534,7 @@
                             <ul class="list-group">
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 20 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 20 Mega</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
                             </ul>
@@ -335,7 +556,7 @@
                             <ul class="list-group">
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 50 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 50 Mega</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
                             </ul>
@@ -351,7 +572,7 @@
         </div>
     </div>
 </section>
-<!--Service-->
+<!--Service2-->
 <!-- Portfolio -->
 <section  id="portfolio">
     <div class="container">
@@ -383,6 +604,37 @@
     </div>
 </section>
 <!--/Portfolio -->
+
+<!--Aboutus-->
+<section id="aboutUs">
+    <div class="inner_wrapper">
+        <div class="container">
+            <h2>Quem somos</h2>
+            <div class="inner_section">
+                <div class="row">
+                    <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right"><img src="img/anatel.jpg" height="280" width="1960" class="img-circle delay-03s animated wow zoomIn" alt=""></div>
+                    <div class=" col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left">
+                        <div class=" delay-01s animated fadeInDown wow animated">
+                            <h3>Para empresas que desejam ter acesso WIFI, nos podemos
+                            fazer o planejamento, a instalação e a divulgação WIFI ZONE para seus clientes... Consulte-nos....</h3><br/>
+                            <p>A Server House Informática, conta com planos acessíveis, a partir de R$ 62,00.
+                            Faça-nos uma visita para conhecer nosso Data Center e fazer um teste em nossa internet.
+                            Contamos com uma infra estrutura de qualidade e técnicos disponíveis 24h por dia.</p> <br/>
+                            <p>A Server House Informatica pode ajudar as empresas instaladas na área industrial da cidade,
+                            oferecendo internet e telefone, faça-nos uma visita e confira nossos planos... </p>
+                        </div>
+                        <div class="work_bottom"> <span>Quer saber mais..</span> <a href="#contact" class="contact_btn">Entre em contato</a> </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--Aboutus--> 
+
 <!--Footer-->
 <footer class="footer_wrapper" id="contact">
     <div class="container">

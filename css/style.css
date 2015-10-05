@@ -24,6 +24,13 @@ Do not remove the back-link in this web template
    
 
 }
+#home-box1{
+    width: 20%;
+    transition: all .5s ease-in-out; 
+
+   
+
+}
 .box-shadow{
      transition: all .5s ease-in-out; 
 }
@@ -31,6 +38,7 @@ Do not remove the back-link in this web template
     box-shadow: 0 0 30px -5px #000;
 }
 #home-box:hover { transform: scale(1.1); }
+#home-box1:hover { transform: scale(1.1); }
 
 .actions{
     transform: scale(1.1);
@@ -41,6 +49,14 @@ Do not remove the back-link in this web template
 
 
 #home-box > h2 { 
+    font-family: "Quicksand", sans-serif; 
+    font-weight: 100; 
+    line-height: 1.1; 
+    color: #75b1ae; 
+
+}
+
+#home-box1 > h2 { 
     font-family: "Quicksand", sans-serif; 
     font-weight: 100; 
     line-height: 1.1; 
@@ -389,10 +405,10 @@ a.read_more2:hover {
 
 
 
-/* Services
+/* Services1
 ---------------------------------*/
 
-#service {
+#service1 {
     padding: 60px 0px;
     background: #EFEFEF;
 }
@@ -469,6 +485,89 @@ a.read_more2:hover {
     margin: -9px 0 0 -8px;
     background: url(../img/recomendado_01.png);
 }
+
+
+/* Services2
+---------------------------------*/
+
+#service2 {
+    padding: 60px 0px;
+    background: #EFEFEF;
+}
+
+.service_wrapper {
+    padding: 40px 0 40px;
+}
+
+.service_section {
+}
+
+.service_block {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.service_icon {
+    border: 2px solid #FF9000;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 0px auto 25px;
+}
+
+.service_icon.icon2 {
+    border: 2px solid #FF9000;
+}
+
+.service_icon.icon3 {
+    border: 2px solid #FF9000;
+}
+
+.service_icon span {
+    background: transparent;
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.service_icon i {
+    color: #FF9000;
+    font-size: 40px;
+    margin-top: 0;
+    position: relative;
+    top: 20px;
+    z-index: 20;
+}
+
+.service_block h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #111111;
+    margin: 35px 0 18px;
+}
+
+.service_block p {
+    font-size: 16px;
+    color: #888888;
+    margin: 0px;
+}
+    
+
+.serviceCont{
+    height: 523px;
+}
+
+.recomendado{
+    width: 81px;
+    height: 82px;
+    position: absolute;
+    margin: -9px 0 0 -8px;
+    background: url(../img/recomendado_01.png);
+}
+
 
 
 /* Latest Work

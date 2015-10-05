@@ -1,0 +1,84 @@
+* { font-family: 'Open Sans', sans-serif; text-align: center; }
+
+input { text-align: left;}
+
+.login{
+
+	border: 1px;
+
+
+}
+
+.dourado {
+	border: 1px solid #d6b36a;
+	width: 461px;
+	padding: 5px 10px;
+	font-size: 14px ;
+	
+
+}
+
+.botao{
+	margin-top: 23px;
+	border: 1px solid #d6b36a;
+	font-size: 14px;
+	width: 213px;
+	color: black;
+	background-color: #d6b36a;
+	text-align: center;
+	padding: 5px 10px;
+}
+
+
+.posicao{
+	margin-top: 100px;
+}
+
+.textoFim{
+	margin-top: 10px;
+	font-size: 10px;
+}
+
+.esqSenha{
+	font-size: 12px;
+	
+}
+
+.foto{
+	margin-top: 20px;
+}
+
+.topo{
+	font-size: 20px;
+	text-align: left;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.btnDeslogar{
+	margin-top: 5px;
+	float: right;
+	margin-right: 10px;	
+}
+.caption{
+	font-size: 20px;
+	margin-top: 50px;
+}
+.tabela{
+	margin-right: 10px;	
+	margin-left: 10px;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

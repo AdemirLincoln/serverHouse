@@ -38,10 +38,39 @@
         $('.progress-bar').css('width', valeur+'50%').attr('aria-valuenow', valeur);
         $('.enviar').addClass('hidden');
         $('.next').removeClass('hidden');
-        $('#tab1').modal();
+        $('#tab11').modal();
     });
 
     $( document ).on('click', '#tab', function() {
+        
+        var valeur = 0;
+        
+            if ( $(this).attr('value') > valeur )
+            {
+                valeur =  $(this).attr('value');
+            }
+        $('.progress-bar').css('width', valeur+'50%').attr('aria-valuenow', valeur);
+        $('.enviar').addClass('hidden');
+        $('.next').removeClass('hidden');
+        $('#tab12').modal();
+
+    });
+
+    $( document ).on('click', '#home1', function() {
+        
+        var valeur = 0;
+        
+            if ( $(this).attr('value') > valeur )
+            {
+                valeur =  $(this).attr('value');
+            }
+        $('.progress-bar').css('width', valeur+'50%').attr('aria-valuenow', valeur);
+        $('.enviar').addClass('hidden');
+        $('.next').removeClass('hidden');
+        $('#tab11').modal();
+    });
+
+    $( document ).on('click', '#tab1', function() {
         
         var valeur = 0;
         

@@ -13,11 +13,11 @@
                     </div>
     
                     <div class="tab-content">
-                        <div class="tab-pane active" id="tab1">
+                        <div class="tab-pane active" id="tab11">
                             <div class="row" style="margin-top: 20px">
 
                                 <div class="col-sm-12" >
-
+                                <form action="gravarDados.php" method="post" accept-charset="utf-8">
 
                                     <div class="form-group col-md-6">
 
@@ -26,7 +26,7 @@
                                     <div class="form-group col-md-6">
 
                                         <input type="text" class="form-control" name="rg" value="" placeholder="RG:">
-
+                                        <input type="hidden" name="type" value="pf">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <input type="text" class="form-control" name="cpf" value="" placeholder="CPF:">
@@ -42,7 +42,7 @@
                         </div>
 
 
-                        <div class="tab-pane" id="tab2">
+                        <div class="tab-pane" id="tab21">
                             <div class="row" style="margin-top: 20px">
 
                                 <div class="col-sm-12" >  
@@ -73,11 +73,7 @@
 
                                     <?php
                                    
-                                        $con = new PDO ( "mysql:host=localhost;dbname=serverhouse", "root", "root" );
-
-                                        if (!$con) {
-                                            echo "Erro de Conexao";
-                                        }
+                                        include 'global.php';
 
                                     ?>
                                     <label style="margin-left: 30px" for="cod_estados">Estado:</label>
@@ -122,15 +118,17 @@
                 <div class="modal-footer">
 
                     <div style="float:right">
-                        <input type='button' href="#tab2" data-toggle="tab" class='btn btn-primary next' name='next' value='Próximo' />
+                        <input type='submit' class='btn btn-primary enviar hidden' name='enviar' value='Enviar' />
+                    </div>
+
+                    </form>
+
+                    <div style="float:right">
+                        <input type='button' href="#tab21" data-toggle="tab" class='btn btn-primary next' name='next' value='Próximo' />
                     </div>
 
                     <div style="float:left">
-                        <input type='button' href="#tab1" data-toggle="tab" class='btn btn-primary previous' name='previous' value='Voltar' />
-                    </div>
-
-                    <div style="float:right">
-                        <input type='button' href="#tab2" data-toggle="tab" class='btn btn-primary enviar hidden' name='enviar' value='Enviar' />
+                        <input type='button' href="#tab11" data-toggle="tab" class='btn btn-primary previous' name='previous' value='Voltar' />
                     </div>
 
                 </div>

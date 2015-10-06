@@ -17,8 +17,8 @@
                             <div class="row" style="margin-top: 20px">
 
                                 <div class="col-sm-12" >
-
-
+                                <form action="gravarDados.php" method="post" accept-charset="utf-8">
+                                
                                     <div class="form-group col-md-6">
 
                                         <input type="text" class="form-control" name="empresa" value="" placeholder="Empresa:">
@@ -31,7 +31,7 @@
                                     <div class="form-group col-md-6">
                                         <input type="text" class="form-control" name="cnpj" value="" placeholder="CNPJ:">
                                     </div>
-
+                                        <input type="hidden" name="type" value="pj">
                                     <div class="form-group col-md-6">
                                         <input type="text" class="form-control" name="email" value="" placeholder="E-mail:">
                                     </div>
@@ -73,11 +73,7 @@
 
                                     <?php
                                    
-                                        $con = new PDO ( "mysql:host=localhost;dbname=serverhouse", "root", "root" );
-
-                                        if (!$con) {
-                                            echo "Erro de Conexao";
-                                        }
+                                        include 'global.php';
 
                                     ?>
                                     <label style="margin-left: 30px" for="cod_estados">Estado:</label>
@@ -122,15 +118,17 @@
                 <div class="modal-footer">
 
                     <div style="float:right">
+                        <input type='submit' class='btn btn-primary enviar hidden' name='enviar' value='Enviar' />
+                    </div>
+
+                    </form>
+
+                    <div style="float:right">
                         <input type='button' href="#tab22" data-toggle="tab" class='btn btn-primary next' name='next' value='Próximo' />
                     </div>
 
                     <div style="float:left">
                         <input type='button' href="#tab12" data-toggle="tab" class='btn btn-primary previous' name='previous' value='Voltar' />
-                    </div>
-
-                    <div style="float:right">
-                        <input type='button' href="#tab22" data-toggle="tab" class='btn btn-primary enviar hidden' name='enviar' value='Enviar' />
                     </div>
 
                 </div>

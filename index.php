@@ -62,7 +62,7 @@
                     <div class="col-lg-5 col-sm-7">
                         <div class="top_left_cont zoomIn wow animated">
                             <h2>A melhor Qualidade em internet para sua empresa</h2>
-                        <a href="#service" class="read_more2">Assine Já</a> </div>
+                        <a href="#service2" class="read_more2">Assine Já</a> </div>
                     </div>
                     <div class="col-lg-7 col-sm-5">
                         <img src="img/img_top_vendor.png" height="448" width="458" class="zoomIn wow animated" alt="" />
@@ -82,7 +82,7 @@
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active">
-                    <a href="#home1" aria-controls="home1" role="tab" data-toggle="tab">Planos Wirelles</a>
+                    <a href="#home1" aria-controls="home1" role="tab" data-toggle="tab">Planos Residenciais</a>
                 </li>
                 <li role="presentation">
                     <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Planos Empresariais</a>
@@ -129,7 +129,7 @@
                             </ul>
 
                             <div class="try">
-                                <p class="price">R$ 69,90</p>
+                                <p class="price">R$ 79,90</p>
                                 <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
                             </div>
                         </div>
@@ -140,6 +140,28 @@
                     <div class="col-md-3 actions" id="home-box1">
                         <div class="box-shadow">
                             <div class="recomendado"></div>
+                            <div class="pricing_header">
+                                <h2>Residencial 3mb</h2>
+                                <div class="space"></div>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 3 Mega</li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload:  Mega</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
+                            </ul>
+
+                            <div class="try">
+                                <p class="price">R$ 89,90</p>
+                                <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pack 4-->
+                    <div class="col-md-3" id="home-box1">
+                        <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Residencial 4mb</h2>
                                 <div class="space"></div>
@@ -159,33 +181,11 @@
                         </div>
                     </div>
 
-                    <!-- Pack 4-->
-                    <div class="col-md-3" id="home-box1">
-                        <div class="box-shadow">
-                            <div class="pricing_header">
-                                <h2>Residencial 5mb</h2>
-                                <div class="space"></div>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 5 Mega</li>
-                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 5 Mega</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
-                            </ul>
-
-                            <div class="try">
-                                <p class="price">R$ 149,90</p>
-                                <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Pack 5-->
                     <div class="col-md-3" id="home-box1">
                         <div class="box-shadow">
                             <div class="pricing_header">
-                                <h2>Residencial 10mb</h2>
+                                <h2>Residencial 6mb</h2>
                                 <div class="space"></div>
                             </div>
                             <ul class="list-group">
@@ -197,7 +197,7 @@
                             </ul>
 
                             <div class="try">
-                                <p class="price">R$ 189,90</p>
+                                <p class="price">R$ 119,90</p>
                                 <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
                             </div>
                         </div>
@@ -218,7 +218,7 @@
                             <ul class="list-group">
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 5 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 5 Mega</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Incluso</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
                             </ul>
@@ -239,13 +239,13 @@
                             <ul class="list-group">
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 10 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 10 Mega</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Incluso</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
                             </ul>
 
                             <div class="try">
-                                <p class="price">R$ 179,90</p>
+                                <p class="price">R$ 149,90</p>
                                 <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
                             </div>
                         </div>
@@ -262,13 +262,13 @@
                             <ul class="list-group">
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 15 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 15 Mega</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Incluso</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
                             </ul>
 
                             <div class="try">
-                                <p class="price">R$ 199,90</p>
+                                <p class="price">R$ 179,90</p>
                                 <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
                             </div>
                         </div>
@@ -284,13 +284,13 @@
                             <ul class="list-group">
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 20 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 20 Mega</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Incluso</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
                             </ul>
 
                             <div class="try">
-                                <p class="price">R$ 219,90</p>
+                                <p class="price">R$ 199,90</p>
                                 <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
                             </div>
                         </div>
@@ -306,13 +306,13 @@
                             <ul class="list-group">
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 50 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 50 Mega</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
+                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Incluso</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Navegue e faça downloads ilimitados sem pagar nenhum excedente!</li>
                             </ul>
 
                             <div class="try">
-                                <p class="price">R$ 339,90</p>
+                                <p class="price">R$ 299,90</p>
                                 <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
                             </div>
                         </div>
@@ -332,7 +332,7 @@
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active">
-                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Planos Wirelles</a>
+                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Planos Residenciais</a>
                 </li>
                 <li role="presentation">
                     <a href="#tab" aria-controls="tab" role="tab" data-toggle="tab">Planos Empresariais</a>
@@ -573,6 +573,7 @@
     </div>
 </section>
 <!--Service2-->
+
 <!-- Portfolio -->
 <section  id="portfolio">
     <div class="container">
@@ -688,10 +689,14 @@
 
                 <div class="col-lg-8 wow fadeInLeft delay-06s">
                     <div class="form">
-                        <input class="input-text" type="text" name="" value="Seu Nome *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-                        <input class="input-text" type="text" name="" value="Seu E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-                        <textarea class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Sua Mensagem *</textarea>
-                        <input class="input-btn" type="submit" value="enviar mensagem">
+                        <form action="gravarDados.php" method="post" accept-charset="utf-8">                     
+                                        
+                            <input class="input-text" type="text" name="nome" value="Seu Nome *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                            <input class="input-text" type="text" name="email" value="Seu E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                            <textarea class="input-text text-area" cols="0" name="mensagem" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Sua Mensagem *</textarea>
+                            <input class="input-btn" type="submit" value="enviar mensagem">
+
+                        </form>
                     </div>
                 </div>
             </div>

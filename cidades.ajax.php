@@ -1,4 +1,7 @@
 <?php
+
+include 'global.php';
+
 header('Cache-Control: no-cache');
 function arrayUtf8Enconde($array) {
 
@@ -28,11 +31,7 @@ function arrayUtf8Enconde($array) {
 	return $novo;
 }
 
-$con = new PDO("mysql:host=localhost;dbname=serverhouse", "root", "root");
 
-if (!$con) {
-    echo "Erro de Conexao";
-}
 
 $cod_estados = $_REQUEST['cod_estados'];
 

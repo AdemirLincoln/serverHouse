@@ -1,14 +1,14 @@
 <?php
 session_start();
 
-include 'global.php';
+include '../global.php';
 
 ?>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
 <head>
-	<meta charset="utf-8">
+	  <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	
 	<title>Pagina restrita 1</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -65,20 +65,32 @@ else{
 										 Nome
 									</th>
 									<th>
+										 RG
+									</th>
+									<th>
+										 CPF
+									</th>
+									<th>
 										 E-mail
+									</th>
+									<th>
+										 Endereço
+									</th>
+									<th>
+										 Número
+									</th>
+									<th>
+										 Celular
 									</th>
 									<th>
 										 Telefone
 									</th>
 									<th>
+										 Estado
+									</th>
+									<th>
 										 Cidade
-									</th>
-									<th>
-										 Como soube da Feira
-									</th>
-									<th>
-										 É expositor
-									</th>
+									</th>									
 									<th>
 										 Data Cadastro
 									</th>
@@ -87,9 +99,9 @@ else{
 								<tbody>
 
 								<?php 
-									$sql="SELECT *,DATE_FORMAT(cadastro.dataCadastro,'%d/%m/%Y') as dataCadastro FROM cadastro";
+									$sql="SELECT *,DATE_FORMAT(clientes.data,'%d/%m/%Y') as data FROM clientes";
 
-									$stmt = $pdo->prepare($sql);
+									$stmt = $con->prepare($sql);
 									$stmt->execute();
 									while ($linha = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
@@ -98,46 +110,19 @@ else{
 								 ?>
 
 								 <?php foreach ($dados as $key => $value): ?>
-								 	<!-- Array ( [id] 
-								 	 5 [select] 
-								 	 1 [radio] 
-								 	 0 [nome] 
-								 	 Vinicius [email] 
-								 	 vinicius.marinho@outlook.com [telefone] 
-								 	  9933-3444 [cidade] 
-								 	  Cascavel ) -->
+								 	
 								 	<tr>
 										<td><?php echo $value['nome'] ?></td>
+										<td><?php echo $value['rg'] ?></td>
+										<td><?php echo $value['cpf'] ?></td>
 										<td><?php echo $value['email'] ?></td>
+										<td><?php echo $value['endereco'] ?></td>
+										<td><?php echo $value['numero'] ?></td>
+										<td><?php echo $value['celular'] ?></td>
 										<td><?php echo $value['telefone'] ?></td>
-										<td><?php echo $value['cidade'] ?></td>
-										<td>
-											<?php 
-												if ($value['select'] == 1) {
-													echo "Pelo site";
-												}
-												if ($value['select'] == 2) {
-													echo "Com um(a) amigo(a)";
-												}
-												if ($value['select'] == 3) {
-													echo "Na televisão";
-												}
-												if ($value['select'] == 4) {
-													echo "Navegando na Web";
-												}												
-											?>
-										</td>
-										<td>
-											<?php 
-												if ($value['radio'] == 1) {
-													echo "Sim";
-												}
-												if ($value['radio'] == 0) {
-													echo "Não";
-												}												 
-											?>
-										</td>
-										<td><?php echo $value['dataCadastro'] ?></td>
+										<td><?php echo utf8_encode($value['estado']); ?></td>
+										<td><?php echo utf8_encode($value['cidade']); ?></td>										
+										<td><?php echo $value['data'] ?></td>
 									</tr>
 								 	
 								 <?php endforeach ?>

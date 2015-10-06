@@ -39,7 +39,7 @@ $cidades = array();
 
 $sql = "SELECT cod_cidades, nome
 			FROM cidades
-			WHERE estados_cod_estados=$cod_estados
+			WHERE estados_cod_estados = $cod_estados
 			ORDER BY nome";
 $stmt = $con->prepare($sql);
 $stmt->execute();

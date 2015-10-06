@@ -1,8 +1,9 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="Unicode/utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
 		<title>Tela de Login</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 	    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -48,21 +49,21 @@
 
 <?php 
 
-include 'global.php';
+include '../global.php';
 
 
 if ($_POST) {
 
 	if (!empty($_POST['login']) && !empty($_POST['email'])) {
 			
-		$consulta = $pdo->prepare("SELECT login FROM login where login = :usuario;");
+		$consulta = $con->prepare("SELECT login FROM login where login = :usuario;");
 		$consulta->bindParam(':usuario', $_POST['login'], PDO::PARAM_STR);
 		$consulta->execute();
 		if($linha = $consulta->fetch(PDO::FETCH_ASSOC)){
 
 			if (isset($_POST['enviar'])) {
 
-				$consulta = $pdo->prepare("SELECT senha FROM login where senha = :usuario;");
+				$consulta = $con->prepare("SELECT senha FROM login where senha = :usuario;");
 				$consulta->bindParam(':usuario', $_POST['senha'], PDO::PARAM_STR);
 				$consulta->execute();
 				$linha2 = $consulta->fetch(PDO::FETCH_ASSOC);

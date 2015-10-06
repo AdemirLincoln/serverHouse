@@ -715,8 +715,11 @@
 <script type="text/javascript" src="js/jquery.isotope.js"></script>
 <script type="text/javascript" src="js/wow.js"></script> 
 <script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/jquery.mask.js"></script>  
+<script type="text/javascript" src="js/organizar.js"></script> 
 
-<script type="text/javascript" src="js/organizar.js"></script>      
+
+    
 
 <?php
     include 'modal1.php'; 

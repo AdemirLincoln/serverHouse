@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div id="rootwizard">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> 
                     <h4 class="modal-title">Cadastro Residência</h4>
                 </div>
                 <div class="modal-body">
@@ -17,7 +17,7 @@
                             <div class="row" style="margin-top: 20px">
 
                                 <div class="col-sm-12" >
-                                <form action="gravarDados.php" method="post" accept-charset="utf-8">
+                                <form class="form2" action="gravarDados.php" method="post" accept-charset="utf-8">
 
                                     <div class="form-group col-md-6">
 
@@ -29,11 +29,11 @@
                                         <input type="hidden" name="type" value="pf">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" name="cpf" value="" placeholder="CPF:">
+                                        <input type="text" class="form-control cpf" name="cpf" value="" placeholder="CPF:">
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" name="email" value="" placeholder="E-mail:">
+                                        <input type="text" class="form-control emails" name="email" value="" placeholder="E-mail:">
                                     </div>
                                     
                                 </div>
@@ -55,19 +55,19 @@
 
                                     <div class="form-group col-md-6">
 
-                                        <input type="text" class="form-control" name="numero" value="" placeholder="Número:">    
+                                        <input type="text" class="form-control numero" name="numero" value="" placeholder="Número:">    
 
                                     </div>                  
 
                                     <div class="form-group col-md-6">
 
-                                        <input type="text" class="form-control" name="celular" value="" placeholder="Telefone Celular:">
+                                        <input type="text" class="form-control phone_with_ddd" name="celular" value="" placeholder="Telefone Celular:">
 
                                     </div>
 
                                     <div class="form-group col-md-6">
 
-                                        <input type="text" class="form-control" name="telefone" value="" placeholder="Telefone Fixo:">
+                                        <input type="text" class="form-control phone_with_ddd" name="telefone" value="" placeholder="Telefone Fixo:">
 
                                     </div>
 

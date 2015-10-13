@@ -724,9 +724,9 @@
                     <div class="form">
                         <form action="gravarDados.php" method="post" accept-charset="utf-8">                     
                                         
-                            <input class="input-text" type="text" name="nome" value="Seu Nome *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-                            <input class="input-text" type="text" name="email" value="Seu E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-                            <textarea class="input-text text-area" cols="0" name="mensagem" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Sua Mensagem *</textarea>
+                            <input class="input-text" type="text" name="nomeBaixo" value="Seu Nome *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                            <input class="input-text" type="text" name="emailBaixo" value="Seu E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                            <textarea class="input-text text-area" cols="0" name="mensagemBaixo" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Sua Mensagem *</textarea>
                             <input class="input-btn" type="submit" value="enviar mensagem">
 
                         </form>
@@ -766,6 +766,7 @@
     include 'modal1.php'; 
     include 'modal2.php';
     include 'modalContrato.php';
+
 ?>
 
 </body>

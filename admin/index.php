@@ -29,7 +29,7 @@ if (($_POST)) {
 				echo '
 					<script>
 						
-						  location.href="admin.php";
+						  location.href="edit.php";
 						
 				    </script>
 				

@@ -10,7 +10,7 @@ Do not remove the back-link in this web template
 @import url(http://fonts.googleapis.com/css?family=Signika:400,600);
 
 .container { 
-    padding-top: 40px; 
+    padding-top: 30px; 
 }
 #details { 
     font-family: "Quicksand", sans-serif; 
@@ -31,6 +31,11 @@ Do not remove the back-link in this web template
    
 
 }
+
+.ladinho{
+    text-align: center;
+}
+
 .box-shadow{
      transition: all .5s ease-in-out; 
 }
@@ -214,7 +219,7 @@ p {
 }
 
 .topCima{
-    width: 1270px;
+    width: 1370px;
 }
 .res-nav_click {
     display: none;
@@ -240,6 +245,7 @@ p {
 
 .navStyle {
     float: right;
+    margin-top: -23px;
 }
 
 .navStyle ul {
@@ -968,6 +974,10 @@ img {
 
 .team_box ul li a.fa-google-plus:hover {
     color: #dd4b39;
+}
+
+.iconesMaior{
+    font-size: 35px !important;
 }
  
 #aboutUs {

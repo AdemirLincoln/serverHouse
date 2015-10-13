@@ -1,4 +1,4 @@
-<div class="modal fade" id="modalres">
+<div class="modal fade" id="modalres" ng-controller='geral'>
     <div class="modal-dialog">
         <div class="modal-content">
             <div id="rootwizard">
@@ -102,7 +102,13 @@
                                         <option value="">-- Escolha um estado --</option>
                                     </select>
 
-                                
+                                    <br><br>
+
+                                    <a href="2015-09-24 (1).pdf"><i class="fa fa-file"></i> CONTRATO DE PRESTAÇÃO DE SERVIÇOS</a>
+
+                                    <br><br>
+
+                                    <input type="checkbox" name="termos" ng-model="checkae" value=""> Li e concordo com os Termos e Condições do <a href="2015-09-24 (1).pdf">Contrato de Serviços</a>  
                                    
 
                                 </div>
@@ -118,7 +124,7 @@
                 <div class="modal-footer">
 
                     <div style="float:right">
-                        <input type='submit' class='btn btn-primary enviar hidden' name='enviar' value='Enviar' />
+                        <input type='submit' ng-hide="!checkae" class='btn btn-primary enviar hidden' name='enviar' value='Enviar' />
                     </div>
 
                     </form>
@@ -136,9 +142,6 @@
         </div>
     </div>
 </div>
-
-
-
 
 
 

@@ -421,7 +421,7 @@ include '../global.php';
 								 ?>
 
 								 <?php foreach ($dados as $key => $value): ?>
-								 	
+								 	 
 								 	<tr>
 										<td><?php echo $value['nome'] ?></td>
 										<td><?php echo $value['rg'] ?></td>

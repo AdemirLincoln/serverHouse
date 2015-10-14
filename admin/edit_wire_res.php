@@ -4,7 +4,7 @@ session_start();
 include '../global.php';
 
 ?>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" ng-app="myapp">
 <!--<![endif]-->
 <!-- BEGIN HEAD -->
 <head>
@@ -319,21 +319,118 @@ include '../global.php';
 					</div> -->
 				</div>
 				<!-- END PAGE HEADER-->
+				<div class="row">
+			
+					<?php             
+                    
+	                    $sql = "SELECT * FROM planos_itens
+	                            INNER JOIN planos ON planos.id = planos_itens.id_planos
+	                            WHERE planos.tipo = 'wr'";
 
-				<form action="../gravarDados.php" method="POST" role="form">
-					<legend>Form title</legend>
-				
-					<div class="form-group">
-						<label for="">label</label>
-						<input type="text" class="form-control" id="" placeholder="Input field">
-					</div>
-				
+	                    $stmt = $con->prepare($sql);
+	                    $stmt->execute();
+	                        
+	                    while($linha = $stmt->fetch(PDO::FETCH_ASSOC)){ 
+	                        $dados[] = $linha;
+	                    }
+
+	                    // print_r($linha);
+
+	                ?>
+
+					<?php foreach ($dados as $key => $value): ?> 
 					
-				
-					<button type="submit" class="btn btn-primary">Submit</button>
-				</form>
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+	                        <div class="box-shadow">
+	                            <div class="pricing_header">
+	                                <h2><?php echo $value['descricao'] ?></h2>
+	                                <div class="space"></div>
+	                            </div>
+	                            <ul class="list-group">
+	                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo1'] ?></li>
+	                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo2'] ?></li>
+	                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo3'] ?></li>
+	                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo4'] ?></li>
+	                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo5'] ?></li>
+	                            </ul>
+	                       
 
-				
+	                            <div class="try">
+	                                <p class="price"><?php echo $value['preco'] ?></p>
+	                                <input type="checkbox" ng-model="alterar">Alterar
+	                            </div>
+	                        </div>
+	                    </div>
+
+                	<?php endforeach ?>
+
+                	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+
+                	<div style="margin-top: 100px !important;" ng-hide="!alterar">
+                	
+	                	<form action="gravarDadosAdmin.php" method="POST" role="form">
+							
+							<input type="hidden" name="tipo" value="wr">
+
+							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">			
+								<div class="form-group">
+									<label for="">Titulo do Plano:</label>
+									<input type="text" name="descricao" class="form-control" >
+								</div>
+							</div>
+
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
+								<div class="form-group">
+									<label for="">Campo 1:</label>
+									<input type="text" name="campo1" class="form-control" >
+								</div>
+							</div>
+
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
+								<div class="form-group">
+									<label for="">Campo 2:</label>
+									<input type="text" name="campo2" class="form-control" >
+								</div>
+							</div>	
+
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
+								<div class="form-group">
+									<label for="">Campo 3:</label>
+									<input type="text" name="campo3" class="form-control" >
+								</div>
+							</div>	
+
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
+								<div class="form-group">
+									<label for="">Campo 4:</label>
+									<input type="text" name="campo4" class="form-control" >
+								</div>
+							</div>	
+
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
+								<div class="form-group">
+									<label for="">Campo 5:</label>
+									<input type="text" name="campo5" class="form-control" >
+								</div>
+							</div>
+
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
+								<div class="form-group">
+									<label for="">Preço:</label>
+									<input type="text" name="preco" class="form-control" >
+								</div>
+							</div>
+
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">	
+								<button type="submit" class="btn btn-primary">Alterar</button>
+							</div>
+
+						</form>
+
+                	</div>
+
+				</div>
+
 			</div>
 		</div>
 		<!-- END CONTENT -->
@@ -413,6 +510,16 @@ jQuery(document).ready(function() {
 });
 </script>
 <!-- END JAVASCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular.min.js"></script>
+<script>
+    var myapp = angular.module('myapp', []);
+
+    myapp.controller('geral', ['$scope', function ($scope) {
+        // alert();
+        
+    }])
+    
+</script>
 </body>
 <!-- END BODY -->
 </html>

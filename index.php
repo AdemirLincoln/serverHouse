@@ -1,4 +1,9 @@
 <!doctype html>
+
+<?php 
+    include 'global.php';
+?>
+
 <html ng-app="myapp"> 
 <head>
 <meta charset="utf-8">
@@ -104,7 +109,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 1 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 1 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -125,7 +129,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 2 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 2 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -149,7 +152,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 3 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload:  Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -171,7 +173,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 4 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 4 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -193,7 +194,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 10 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 10 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -220,7 +220,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 5 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 5 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Incluso</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -241,7 +240,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 10 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 10 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Incluso</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -264,7 +262,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 15 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 15 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Incluso</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -286,7 +283,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 20 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 20 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Incluso</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -308,7 +304,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 50 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 50 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Incluso</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -338,34 +333,55 @@
                 <li role="presentation">
                     <a href="#tab" aria-controls="tab" role="tab" data-toggle="tab">Planos Empresariais</a>
                 </li>
-            </ul>
-
+            </ul>                         
+            
             <!-- Tab panes -->
             <div class="tab-content" >
+
+                <?php             
+                    
+                    $sql = "SELECT * FROM planos_itens
+                            INNER JOIN planos ON planos.id = planos_itens.id_planos
+                            WHERE planos.tipo = 'wr'";
+
+                    $stmt = $con->prepare($sql);
+                    $stmt->execute();
+                        
+                    while($linha = $stmt->fetch(PDO::FETCH_ASSOC)){ 
+                        $dados[] = $linha;
+                    }
+
+                    // print_r($linha);
+                ?>
+
+
                 <div role="tabpanel" class="tab-pane active" id="home" style="padding-top: 20px">
+
+                    <?php foreach ($dados as $key => $value): ?> 
 
                     <div class="col-md-3" id="home-box">
                         <div class="box-shadow">
                             <div class="pricing_header">
-                                <h2>Residencial 1mb</h2>
+                                <h2><?php echo $value['descricao'] ?></h2>
                                 <div class="space"></div>
                             </div>
                             <ul class="list-group">
-                                <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 1 Mega</li>
-                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 1 Mega</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo1'] ?></li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo2'] ?></li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo3'] ?></li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo4'] ?></li>
+                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo5'] ?></li>
                             </ul>
+                       
 
                             <div class="try">
-                                <p class="price">R$ 59,90</p>
+                                <p class="price"><?php echo $value['preco'] ?></p>
                                 <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
                             </div>
                         </div>
                     </div>
                     <!-- Pack 2-->
-                    <div class="col-md-3" id="home-box">
+<!--                     <div class="col-md-3" id="home-box">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Residencial 2mb</h2>
@@ -375,7 +391,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 2 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 2 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -384,11 +399,11 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <!-- Pack 3-->
-                    <div class="col-md-3 actions" id="home-box">
+<!--                     <div class="col-md-3 actions" id="home-box">
                         <div class="box-shadow">
                             <div class="recomendado"></div>
                             <div class="pricing_header">
@@ -399,7 +414,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 4 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 4 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -408,10 +422,10 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Pack 4-->
-                    <div class="col-md-3" id="home-box">
+<!--                     <div class="col-md-3" id="home-box">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Residencial 5mb</h2>
@@ -421,7 +435,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 5 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 5 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -430,10 +443,10 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Pack 5-->
-                    <div class="col-md-3" id="home-box">
+      <!--               <div class="col-md-3" id="home-box">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Residencial 10mb</h2>
@@ -443,7 +456,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 10 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 10 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Não incluso(ip Fixo + R$10,00)</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -452,9 +464,12 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                    <?php endforeach ?>
 
                 </div>
+
+                
 
                 <div role="tabpanel" class="tab-pane" id="tab" style="padding-top: 20px">
 
@@ -470,7 +485,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 5 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 5 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -491,7 +505,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 10 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 10 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -514,7 +527,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 15 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 15 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -536,7 +548,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 20 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 20 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 
@@ -558,7 +569,6 @@
                                 <li class="list-group-item"> <span class="glyphicon glyphicon-ok"></span> Download: 50 Mega</li>
                                 <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Upload: 50 Mega</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> IP Fixo: Funcionando</li>
-                                <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Plano de Consumo Mensal: Ilimitado</li>
                                 <li class="list-group-item "><span class="glyphicon glyphicon-ok"></span> Taxa de instalação R$ 350,00 e equipamento em comodato</li>
                             </ul>
 

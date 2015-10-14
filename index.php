@@ -99,7 +99,49 @@
             <div class="tab-content" >
                 <div role="tabpanel" class="tab-pane active" id="home1" style="padding-top: 20px">
 
-                    <div class="col-md-3" id="home-box1">
+                    <?php             
+                        
+                        $sql = "SELECT * FROM planos_itens
+                                INNER JOIN planos ON planos.id = planos_itens.id_planos
+                                WHERE planos.tipo = 'fr'
+                                LIMIT 5";
+
+                        $stmt = $con->prepare($sql);
+                        $stmt->execute();
+                            
+                        while($linha = $stmt->fetch(PDO::FETCH_ASSOC)){ 
+                            $dado[] = $linha;
+                        }
+
+                        // print_r($linha);
+                    ?>
+
+                    <?php foreach ($dado as $key => $value): ?> 
+
+                        <div class="col-md-3" id="home-box">
+                            <div class="box-shadow">
+                                <div class="pricing_header">
+                                    <h2><?php echo $value['descricao'] ?></h2>
+                                    <div class="space"></div>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo1'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo2'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo3'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo4'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo5'] ?></li>
+                                </ul>
+                           
+
+                                <div class="try">
+                                    <p class="price"><?php echo $value['preco'] ?></p>
+                                    <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach ?>
+
+                    <!-- <div class="col-md-3" id="home-box1">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Residencial 2mb</h2>
@@ -117,9 +159,9 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Pack 2-->
-                    <div class="col-md-3" id="home-box1">
+                    <!-- <div class="col-md-3" id="home-box1">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Residencial 4mb</h2>
@@ -137,11 +179,11 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <!-- Pack 3-->
-                    <div class="col-md-3 actions" id="home-box1">
+                    <!-- <div class="col-md-3 actions" id="home-box1">
                         <div class="box-shadow">
                             <div class="recomendado"></div>
                             <div class="pricing_header">
@@ -160,10 +202,10 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Pack 4-->
-                    <div class="col-md-3" id="home-box1">
+                    <!-- <div class="col-md-3" id="home-box1">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Residencial 8mb</h2>
@@ -181,10 +223,10 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Pack 5-->
-                    <div class="col-md-3" id="home-box1">
+                    <!-- <div class="col-md-3" id="home-box1">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Residencial 10mb</h2>
@@ -202,15 +244,57 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
 
                 <div role="tabpanel" class="tab-pane" id="tab1" style="padding-top: 20px">
 
+                    <?php             
+                        
+                        $sql = "SELECT * FROM planos_itens
+                                INNER JOIN planos ON planos.id = planos_itens.id_planos
+                                WHERE planos.tipo = 'fe'
+                                LIMIT 5";
+
+                        $stmt = $con->prepare($sql);
+                        $stmt->execute();
+                            
+                        while($linha = $stmt->fetch(PDO::FETCH_ASSOC)){ 
+                            $dadosss[] = $linha;
+                        }
+
+                        // print_r($linha);
+                    ?>
+
+                    <?php foreach ($dadosss as $key => $value): ?> 
+
+                        <div class="col-md-3" id="home-box">
+                            <div class="box-shadow">
+                                <div class="pricing_header">
+                                    <h2><?php echo $value['descricao'] ?></h2>
+                                    <div class="space"></div>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo1'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo2'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo3'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo4'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo5'] ?></li>
+                                </ul>
+                           
+
+                                <div class="try">
+                                    <p class="price"><?php echo $value['preco'] ?></p>
+                                    <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach ?>
+
 
                     <!-- Pack 1 -->
-                    <div class="col-md-3 " id="home-box1">
+                    <!-- <div class="col-md-3 " id="home-box1">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Empresarial 5mb</h2>
@@ -228,9 +312,9 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Pack 2-->
-                    <div class="col-md-3" id="home-box1">
+                    <!-- <div class="col-md-3" id="home-box1">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Empresarial 10mb</h2>
@@ -248,11 +332,11 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <!-- Pack 3-->
-                    <div class="col-md-3" id="home-box1">
+                    <!-- <div class="col-md-3" id="home-box1">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Empresarial 15mb</h2>
@@ -270,10 +354,10 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Pack 4-->
-                    <div class="col-md-3" id="home-box1">
+                    <!-- <div class="col-md-3" id="home-box1">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Empresarial 20mb</h2>
@@ -291,10 +375,10 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Pack 5-->
-                    <div class="col-md-3" id="home-box1">
+                    <!-- <div class="col-md-3" id="home-box1">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Empresarial 50mb</h2>
@@ -312,7 +396,7 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -342,7 +426,8 @@
                     
                     $sql = "SELECT * FROM planos_itens
                             INNER JOIN planos ON planos.id = planos_itens.id_planos
-                            WHERE planos.tipo = 'wr'";
+                            WHERE planos.tipo = 'wr'
+                            LIMIT 5";
 
                     $stmt = $con->prepare($sql);
                     $stmt->execute();
@@ -359,27 +444,28 @@
 
                     <?php foreach ($dados as $key => $value): ?> 
 
-                    <div class="col-md-3" id="home-box">
-                        <div class="box-shadow">
-                            <div class="pricing_header">
-                                <h2><?php echo $value['descricao'] ?></h2>
-                                <div class="space"></div>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo1'] ?></li>
-                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo2'] ?></li>
-                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo3'] ?></li>
-                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo4'] ?></li>
-                                <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo5'] ?></li>
-                            </ul>
-                       
+                        <div class="col-md-3" id="home-box">
+                            <div class="box-shadow">
+                                <div class="pricing_header">
+                                    <h2><?php echo $value['descricao'] ?></h2>
+                                    <div class="space"></div>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo1'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo2'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo3'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo4'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo5'] ?></li>
+                                </ul>
+                           
 
-                            <div class="try">
-                                <p class="price"><?php echo $value['preco'] ?></p>
-                                <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
+                                <div class="try">
+                                    <p class="price"><?php echo $value['preco'] ?></p>
+                                    <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    <?php endforeach ?>
                     <!-- Pack 2-->
 <!--                     <div class="col-md-3" id="home-box">
                         <div class="box-shadow">
@@ -465,7 +551,7 @@
                             </div>
                         </div>
                     </div> -->
-                    <?php endforeach ?>
+                    
 
                 </div>
 
@@ -473,9 +559,52 @@
 
                 <div role="tabpanel" class="tab-pane" id="tab" style="padding-top: 20px">
 
+                <?php             
+                    
+                    $sql = "SELECT * FROM planos_itens
+                            INNER JOIN planos ON planos.id = planos_itens.id_planos
+                            WHERE planos.tipo = 'we'
+                            LIMIT 5";
+
+                    $stmt = $con->prepare($sql);
+                    $stmt->execute();
+                        
+                    while($linha = $stmt->fetch(PDO::FETCH_ASSOC)){ 
+                        $dadoss[] = $linha;
+                    }
+
+                    // print_r($linha);
+                ?>
+
+                    <?php foreach ($dadoss as $key => $value): ?> 
+
+                        <div class="col-md-3" id="home-box">
+                            <div class="box-shadow">
+                                <div class="pricing_header">
+                                    <h2><?php echo $value['descricao'] ?></h2>
+                                    <div class="space"></div>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo1'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo2'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo3'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo4'] ?></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><?php echo $value['campo5'] ?></li>
+                                </ul>
+                           
+
+                                <div class="try">
+                                    <p class="price"><?php echo $value['preco'] ?></p>
+                                    <a class="btn btn-default" data-toggle="modal" href='#modalres' type="button">Assine Já</a>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach ?>
+
+
 
                     <!-- Pack 1 -->
-                    <div class="col-md-3 " id="home-box">
+                    <!-- <div class="col-md-3 " id="home-box">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Empresarial 5mb</h2>
@@ -493,9 +622,9 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Pack 2-->
-                    <div class="col-md-3" id="home-box">
+                    <!-- <div class="col-md-3" id="home-box">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Empresarial 10mb</h2>
@@ -513,11 +642,11 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <!-- Pack 3-->
-                    <div class="col-md-3" id="home-box">
+                    <!-- <div class="col-md-3" id="home-box">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Empresarial 15mb</h2>
@@ -535,10 +664,10 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Pack 4-->
-                    <div class="col-md-3" id="home-box">
+                    <!-- <div class="col-md-3" id="home-box">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Empresarial 20mb</h2>
@@ -556,10 +685,10 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Pack 5-->
-                    <div class="col-md-3" id="home-box">
+                    <!-- <div class="col-md-3" id="home-box">
                         <div class="box-shadow">
                             <div class="pricing_header">
                                 <h2>Empresarial 50mb</h2>
@@ -577,7 +706,7 @@
                                 <a class="btn btn-default" data-toggle="modal" href='#modalemp' type="button">Assine Já</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -732,7 +861,7 @@
 
                 <div class="col-lg-8 wow fadeInLeft delay-06s">
                     <div class="form">
-                        <form action="gravarDados.php" method="post" accept-charset="utf-8">                     
+                        <form action="enviaEmail.php" method="post" accept-charset="utf-8">                     
                                         
                             <input class="input-text" type="text" name="nomeBaixo" value="Seu Nome *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
                             <input class="input-text" type="text" name="emailBaixo" value="Seu E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">

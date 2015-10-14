@@ -136,7 +136,7 @@ include '../global.php';
 										Planos Residenciais</a>
 									</li>
 									<li>
-										<a href="">
+										<a href="edit_wire_emp.php">
 										<i class="icon-basket"></i>
 										Planos Empresariais</a>
 									</li>
@@ -149,12 +149,12 @@ include '../global.php';
 								Planos Fibra Óptica</a>
 								<ul class="sub-menu">
 									<li>
-										<a href="">
+										<a href="edit_fibra_res.php">
 										<i class="icon-home"></i>
 										Planos Residenciais</a>
 									</li>
 									<li>
-										<a href="">
+										<a href="edit_fibra_emp.php">
 										<i class="icon-basket"></i>
 										Planos Empresariais</a>
 									</li>
@@ -325,7 +325,8 @@ include '../global.php';
                     
 	                    $sql = "SELECT * FROM planos_itens
 	                            INNER JOIN planos ON planos.id = planos_itens.id_planos
-	                            WHERE planos.tipo = 'wr'";
+	                            WHERE planos.tipo = 'wr'
+	                            LIMIT 5";
 
 	                    $stmt = $con->prepare($sql);
 	                    $stmt->execute();
@@ -340,7 +341,7 @@ include '../global.php';
 
 					<?php foreach ($dados as $key => $value): ?> 
 					
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 	                        <div class="box-shadow">
 	                            <div class="pricing_header">
 	                                <h2><?php echo $value['descricao'] ?></h2>
@@ -357,77 +358,13 @@ include '../global.php';
 
 	                            <div class="try">
 	                                <p class="price"><?php echo $value['preco'] ?></p>
-	                                <input type="checkbox" ng-model="alterar">Alterar
+	                                <a href="campos_wire_res.php?id=<?php echo $value['id_planos'] ?>"  class="btn btn-danger">Editar</a>
 	                            </div>
 	                        </div>
 	                    </div>
 
                 	<?php endforeach ?>
 
-                	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
-
-                	<div style="margin-top: 100px !important;" ng-hide="!alterar">
-                	
-	                	<form action="gravarDadosAdmin.php" method="POST" role="form">
-							
-							<input type="hidden" name="tipo" value="wr">
-
-							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">			
-								<div class="form-group">
-									<label for="">Titulo do Plano:</label>
-									<input type="text" name="descricao" class="form-control" >
-								</div>
-							</div>
-
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
-								<div class="form-group">
-									<label for="">Campo 1:</label>
-									<input type="text" name="campo1" class="form-control" >
-								</div>
-							</div>
-
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
-								<div class="form-group">
-									<label for="">Campo 2:</label>
-									<input type="text" name="campo2" class="form-control" >
-								</div>
-							</div>	
-
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
-								<div class="form-group">
-									<label for="">Campo 3:</label>
-									<input type="text" name="campo3" class="form-control" >
-								</div>
-							</div>	
-
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
-								<div class="form-group">
-									<label for="">Campo 4:</label>
-									<input type="text" name="campo4" class="form-control" >
-								</div>
-							</div>	
-
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
-								<div class="form-group">
-									<label for="">Campo 5:</label>
-									<input type="text" name="campo5" class="form-control" >
-								</div>
-							</div>
-
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
-								<div class="form-group">
-									<label for="">Preço:</label>
-									<input type="text" name="preco" class="form-control" >
-								</div>
-							</div>
-
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">	
-								<button type="submit" class="btn btn-primary">Alterar</button>
-							</div>
-
-						</form>
-
-                	</div>
 
 				</div>
 

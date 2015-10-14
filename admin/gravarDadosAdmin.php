@@ -1,5 +1,8 @@
 <?php 
-   	include '../global.php';
+   	include '../global.php';  	
+
+   	$idstal = $_POST['id'];
+
 
    	$descricao = $_POST['descricao'];
 	$tipo      = $_POST['tipo'];
@@ -12,30 +15,17 @@
 	$campo4    = $_POST['campo4'];
 	$campo5    = $_POST['campo5'];
 
-	$sql1 = "INSERT INTO planos (descricao, tipo, status, preco) 
-			    VALUES ('$descricao', '$tipo', '$status', '$preco')";
+	$sql1 = "UPDATE planos SET descricao = '$descricao', tipo = '$tipo', status = '$status', preco = '$preco' WHERE id = '$idstal'";
+		   	
 	
-	
-
 	$stmt1 = $con->prepare($sql1);
 
-	if ($stmt1->execute()) {
+	$stmt1->execute();
 
-		$id_planos = "SELECT id FROM planos";
+	if ($stmt1) {
 
-		$exeid = $con->prepare($id_planos);
-
-		$exeid->execute();
-
-		$id_plano = $con->lastInsertId();
-  //       echo '<pre>';
-		// print_r($dados);
-
-		// die();
-
-
-		$sql = "INSERT INTO planos_itens (id_planos, campo1, campo2, campo3, campo4, campo5) 
-			    VALUES ('$id_plano', '$campo1', '$campo2', '$campo3', '$campo4', '$campo5')";
+		$sql = "UPDATE planos_itens SET id_planos = '$idstal', campo1 = '$campo1', campo2 = '$campo2', campo3 = '$campo3', campo4 = '$campo4', campo5 = '$campo5'
+			         WHERE id_planos = '$idstal'";
 			    
 
 		$stmt = $con->prepare($sql);
@@ -43,8 +33,11 @@
 
 		if ($stmt->execute()) {
 			echo '<script language= "JavaScript">
-				location.href="edit_wire_res.php"
-			</script>';
+
+					alert("Dados alterados com sucesso!");
+
+					location.href="admin.php"
+				</script>';
 		}
 	}
 	

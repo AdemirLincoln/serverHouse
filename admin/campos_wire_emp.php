@@ -4,7 +4,7 @@ session_start();
 include '../global.php';
 
 ?>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" ng-app="myapp">
 <!--<![endif]-->
 <!-- BEGIN HEAD -->
 <head>
@@ -296,7 +296,7 @@ include '../global.php';
 				<!-- END STYLE CUSTOMIZER -->
 					
 				<!-- BEGIN PAGE HEADER-->
-				<h3 class="page-title">Cadastros</h3>
+				<h3 class="page-title">Edições dos Planos Wirelless Empresariais</h3>
 
 				<div class="page-bar">
 
@@ -307,7 +307,7 @@ include '../global.php';
 							<i class="fa fa-angle-right"></i>
 						</li>
 						<li>
-							<a href="#">Cadastros</a>
+							<a href="#">Edições dos Planos Wirelless Empresariais</a>
 						</li>
 					</ul>
 					<!-- <div class="page-toolbar">
@@ -319,137 +319,101 @@ include '../global.php';
 					</div> -->
 				</div>
 				<!-- END PAGE HEADER-->
-				<!-- BEGIN DASHBOARD STATS -->
-
-
-				<?php 
-					if ($_SESSION['validacao'] == "1"){ 
-				?>
+				<div class="row">			
 					
-					<div class="topo">
-					
-						<div style="font-size: 16px">
-							Seja bem vindo <strong><? echo $_SESSION['usuario'];?></strong> ao seu Painel de Edições.
-						</div>
-						
-						<div class="btnDeslogar">
-							<a class="btn btn-primary pull-right"  href="deslogar.php">Deslogar</a> 
-						</div>	
+                	
+                	<?php if (isset($_GET) && $_GET['id'] != ""): ?>
 
-						<br><br><br>
+                		<?php
+
+	                		$idstal = $_GET['id'];
+
+						   	$consulta = "SELECT * FROM planos
+										 INNER JOIN planos_itens ON planos_itens.id_planos = planos.id 
+						   				 WHERE planos.id = '$idstal' AND planos.tipo = 'we'";
+
+						   	$cuns = $con->prepare($consulta);
+
+							$cuns->execute();
+
+							while($linha = $cuns->fetch(PDO::FETCH_ASSOC)){ 
+						        $coisa[] = $linha;
+						    }
+
+						    print_r($linha);
+					    ?>
+
+                		<form action="gravarDadosAdmin.php" method="POST" role="form">
+
+	                		<?php foreach ($coisa as $key => $value): ?> 
 							
-					</div>
+							<input type="hidden" name="tipo" value="we">
+							<input type="hidden" name="id" value="<?php echo $value['id_planos'] ?>">
 
-					
-
-
-				<?php
-					}					
-				?>
-
-				<div class="row">
-					<div class="col-md-12">
-						<!-- BEGIN EXAMPLE TABLE PORTLET-->
-						<div class="portlet">
-							<div class="portlet-title">
-								<div class="caption">
-									<i class="fa fa-edit"></i>Tabela de usuários Cadastrados.
-								</div>
-								<div class="tools">
-									<a href="javascript:;" class="collapse">
-									</a>
-									<a href="#portlet-config" data-toggle="modal" class="config">
-									</a>
-									<a href="javascript:;" class="reload">
-									</a>
-									<a href="javascript:;" class="remove">
-									</a>
+							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">			
+								<div class="form-group">
+									<label for="">Titulo do Plano:</label>
+									<input type="text" value="<?php echo $value['descricao'] ?>" name="descricao" class="form-control" >
 								</div>
 							</div>
-							<div class="tabela">
-								<table class="table table-striped table-hover table-bordered" id="sample_editable_1">
-								<thead>
-								<tr>
-									<th>
-										 Nome
-									</th>
-									<th>
-										 RG
-									</th>
-									<th>
-										 CPF
-									</th>
-									<th>
-										 E-mail
-									</th>
-									<th>
-										 Endereço
-									</th>
-									<th>
-										 Número
-									</th>
-									<th>
-										 Celular
-									</th>
-									<th>
-										 Telefone
-									</th>
-									<th>
-										 Estado
-									</th>
-									<th>
-										 Cidade
-									</th>									
-									<th>
-										 Data Cadastro
-									</th>
-								</tr>
-								</thead>
-								<tbody>
 
-
-
-								<?php 
-									$sql="SELECT *,DATE_FORMAT(clientes.data,'%d/%m/%Y') as data FROM clientes";
-
-									$stmt = $con->prepare($sql);
-									$stmt->execute();
-									while ($linha = $stmt->fetch(PDO::FETCH_ASSOC)) {
-
-										$dados[] = $linha;
-									}
-								 ?>
-
-								 <?php foreach ($dados as $key => $value): ?>
-								 	 
-								 	<tr>
-										<td><?php echo $value['nome'] ?></td>
-										<td><?php echo $value['rg'] ?></td>
-										<td><?php echo $value['cpf'] ?></td>
-										<td><?php echo $value['email'] ?></td>
-										<td><?php echo $value['endereco'] ?></td>
-										<td><?php echo $value['numero'] ?></td>
-										<td><?php echo $value['celular'] ?></td>
-										<td><?php echo $value['telefone'] ?></td>
-										<td><?php echo utf8_encode($value['estado']); ?></td>
-										<td><?php echo utf8_encode($value['cidade']); ?></td>										
-										<td><?php echo $value['data'] ?></td>
-									</tr>
-								 	
-								 <?php endforeach ?>
-								
-								
-								</tbody>
-								</table>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
+								<div class="form-group">
+									<label for="">Campo 1:</label>
+									<input type="text" value="<?php echo $value['campo1'] ?>" name="campo1" class="form-control" >
+								</div>
 							</div>
-						</div>
-						<!-- END EXAMPLE TABLE PORTLET-->
-					</div>
+
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
+								<div class="form-group">
+									<label for="">Campo 2:</label>
+									<input type="text" value="<?php echo $value['campo2'] ?>" name="campo2" class="form-control" >
+								</div>
+							</div>	
+
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
+								<div class="form-group">
+									<label for="">Campo 3:</label>
+									<input type="text" value="<?php echo $value['campo3'] ?>" name="campo3" class="form-control" >
+								</div>
+							</div>	
+
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
+								<div class="form-group">
+									<label for="">Campo 4:</label>
+									<input type="text" value="<?php echo $value['campo4'] ?>" name="campo4" class="form-control" >
+								</div>
+							</div>	
+
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
+								<div class="form-group">
+									<label for="">Campo 5:</label>
+									<input type="text" value="<?php echo $value['campo5'] ?>" name="campo5" class="form-control" >
+								</div>
+							</div>
+
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">			
+								<div class="form-group">
+									<label for="">Preço:</label>
+									<input type="text" value="<?php echo $value['preco'] ?>" name="preco" class="form-control" >
+								</div>
+							</div>
+
+							<?php endforeach ?>
+
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">	
+								<button type="submit" class="btn btn-primary">Alterar</button>
+							</div>
+
+						</form>
+
+                		
+                	<?php endif ?>
+	                	
+                	
+
 				</div>
-				<!-- END DASHBOARD STATS -->
-				<div class="clearfix"></div>
 
-				
 			</div>
 		</div>
 		<!-- END CONTENT -->
@@ -529,6 +493,16 @@ jQuery(document).ready(function() {
 });
 </script>
 <!-- END JAVASCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular.min.js"></script>
+<script>
+    var myapp = angular.module('myapp', []);
+
+    myapp.controller('geral', ['$scope', function ($scope) {
+        // alert();
+        
+    }])
+    
+</script>
 </body>
 <!-- END BODY -->
 </html>
